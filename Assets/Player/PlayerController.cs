@@ -25,7 +25,7 @@ public class PlayerController : MonoBehaviour
         {
             //右移動
             Debug.Log("右移動");
-            transform.localScale = new Vector2(1,1); //絵を右向き
+            transform.localScale = new Vector2(1, 1); //絵を右向き
         }
         else if (axisH < 0.0f)
         {
