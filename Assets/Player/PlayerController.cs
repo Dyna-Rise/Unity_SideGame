@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using static UnityEngine.UI.Image;
 
 public class PlayerController : MonoBehaviour
 {
@@ -11,6 +13,20 @@ public class PlayerController : MonoBehaviour
     public float jump = 9.0f; //ジャンプ力
     public LayerMask groundLayer; //特定のレイヤー(Ground)情報を格納する変数 ※LayerMask型
     bool goJump = false; //ジャンプ開始したかを見るフラグ
+
+    //アニメーション対応
+    Animator animator; //Animatorコンポーネントの情報を格納したい変数
+
+    //Animeのクリップ名を代入する変数達
+    public string stopAnime = "PlayerStop"; 
+    public string moveAnime = "PlayerMove"; 
+    public string jumpAnime = "PlayerJump"; 
+    public string goalAnime = "PlayerGoal"; 
+    public string deadAnime = "PlayerOver";
+
+    //アニメが切り替わったかどうかの検査用
+    string nowAnime = "";
+    string oldAnime = "";
 
     // Start is called before the first frame update
     void Start()
@@ -57,6 +73,7 @@ public class PlayerController : MonoBehaviour
             groundLayer //対象レイヤー
             );
 
+
         //地面にいる時はvelocityがすべてに反応
         //空中にいる時はvelocityは左右だけに反応
         if (onGround || axisH != 0)
@@ -66,11 +83,11 @@ public class PlayerController : MonoBehaviour
         }
 
         //地面にいる＆スペースキーが押された
-        if(onGround && goJump)
+        if (onGround && goJump)
         {
             //後のAddForceメソッドの第一引数にいれる方向データをあらかじめ作っておく
-            Vector2 jumpPw = new Vector2(0,jump);
-            rbody.AddForce(jumpPw,ForceMode2D.Impulse); //jumpPwの方向に瞬間的な力を加えて押し出す
+            Vector2 jumpPw = new Vector2(0, jump);
+            rbody.AddForce(jumpPw, ForceMode2D.Impulse); //jumpPwの方向に瞬間的な力を加えて押し出す
             goJump = false; //ジャンプフラグを元に戻しておく
         }
     }
@@ -81,5 +98,11 @@ public class PlayerController : MonoBehaviour
         goJump = true; //ジャンプ開始されたフラグがtrue
     }
 
+    void OnDrawGizmos()
+    {
+        // 円を描画
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(transform.position, 0.2f);
+    }
 }
 
