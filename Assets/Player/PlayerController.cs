@@ -33,6 +33,11 @@ public class PlayerController : MonoBehaviour
     {
         //Rigidbody2Dを取ってくる
         rbody = this.GetComponent<Rigidbody2D>();
+
+        //Animatorを取ってくる
+        animator = GetComponent<Animator>();
+        nowAnime = stopAnime; //初期設定として「更新すべきアニメ」は"PlayerStop"にしておく
+        oldAnime = stopAnime; //初期設定として「更新前のアニメ」も"PlayerStop"にしておく
     }
 
     // Update is called once per frame
@@ -90,6 +95,31 @@ public class PlayerController : MonoBehaviour
             rbody.AddForce(jumpPw, ForceMode2D.Impulse); //jumpPwの方向に瞬間的な力を加えて押し出す
             goJump = false; //ジャンプフラグを元に戻しておく
         }
+
+        //アニメーション更新
+        if(onGround) //地面の上なら
+        {
+            if(axisH == 0)
+            {
+                nowAnime = stopAnime; //「PlayerStop」クリップに更新すべき
+            }
+            else
+            {
+                nowAnime = moveAnime; //「PlayerMove」クリップに更新すべき
+            }
+        }
+        else //空中なら
+        {
+            nowAnime = jumpAnime; //「PlayerJump」クリップに更新すべき
+        }
+
+        //「更新すべきアニメ」情報が「1フレーム前までのアニメ」情報と異なるのであれば
+        if (nowAnime != oldAnime) 
+        {
+            oldAnime = nowAnime; //次にそなえて情報更新
+            //Animatorコンポーネントの機能を使ってnowAnimeに入っているクリップ名のアニメーションに切り替え
+            animator.Play(nowAnime); 
+        }
     }
 
     //自作メソッド ジャンプフラグを立てるメソッド
@@ -103,6 +133,31 @@ public class PlayerController : MonoBehaviour
         // 円を描画
         Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(transform.position, 0.2f);
+    }
+
+    //当たり判定のある何かとぶつかったら起こるイベント
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.tag == "Goal") //当たった相手(collision)のTagがGoalだったら
+        {
+            Goal(); //ゴールメソッドの発動
+        }
+        else if(collision.gameObject.tag == "Dead")//当たった相手(collision)のTagがDeadだったら
+        {
+            GameOver();//ゲームオーバーメソッドの発動
+        }
+    }
+
+    public void Goal()
+    {
+        //Animatorコンポーネントの機能を使って「PlayerGoal」クリップに切り替え
+        animator.Play(goalAnime);
+    }
+
+    public void GameOver()
+    {
+        //Animatorコンポーネントの機能を使って「PlayerOver」クリップに切り替え
+        animator.Play(deadAnime);
     }
 }
 
