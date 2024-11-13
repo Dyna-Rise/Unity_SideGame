@@ -28,6 +28,8 @@ public class PlayerController : MonoBehaviour
     string nowAnime = "";
     string oldAnime = "";
 
+    public static string gameState = "playing"; //ゲームの状態
+
     // Start is called before the first frame update
     void Start()
     {
@@ -38,11 +40,19 @@ public class PlayerController : MonoBehaviour
         animator = GetComponent<Animator>();
         nowAnime = stopAnime; //初期設定として「更新すべきアニメ」は"PlayerStop"にしておく
         oldAnime = stopAnime; //初期設定として「更新前のアニメ」も"PlayerStop"にしておく
+
+        gameState = "playing"; //ゲーム中という状態に戻す
     }
 
     // Update is called once per frame
     void Update()
     {
+        //ゲーム中の状態でなければ
+        if(gameState != "playing")
+        {
+            return;
+        }
+
         //水平方向の入力をチェックする
         axisH = Input.GetAxisRaw("Horizontal");
 
@@ -68,6 +78,12 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
+        //ゲーム中の状態でなければ
+        if (gameState != "playing")
+        {
+            return;
+        }
+
         //地上判定
         //円のセンサーを設置して、指定した特定レイヤーに引っかかればtrue
         bool onGround = Physics2D.CircleCast(
@@ -152,12 +168,27 @@ public class PlayerController : MonoBehaviour
     {
         //Animatorコンポーネントの機能を使って「PlayerGoal」クリップに切り替え
         animator.Play(goalAnime);
+
+        gameState = "gameclear";
+        GameStop(); //ゲームを停止
     }
 
     public void GameOver()
     {
         //Animatorコンポーネントの機能を使って「PlayerOver」クリップに切り替え
         animator.Play(deadAnime);
+
+        gameState = "gameover";
+        GameStop(); //ゲームを停止
+
+
+    }
+
+    //ゲーム停止
+    void GameStop()
+    {
+        //速度を0にする
+        rbody.velocity = new Vector2(0, 0);
     }
 }
 
