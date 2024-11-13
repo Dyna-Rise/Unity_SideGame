@@ -181,7 +181,11 @@ public class PlayerController : MonoBehaviour
         gameState = "gameover";
         GameStop(); //ゲームを停止
 
-
+        //ゲームオーバーの演出
+        //プレイヤーの当たり判定を無くす
+        GetComponent<CapsuleCollider2D>().enabled = false;
+        //プレイヤーを上に少し跳ね上げる演出
+        rbody.AddForce(new Vector2(0,5),ForceMode2D.Impulse);
     }
 
     //ゲーム停止
