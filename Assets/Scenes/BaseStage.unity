@@ -391,6 +391,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 519420032}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &328831393 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1307305025592049654, guid: c22b1c936c517424994b0765bc3bed85, type: 3}
+  m_PrefabInstance: {fileID: 1952150449984855230}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -820,6 +825,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b05872e9281bf214f978efc973cc2be0, type: 3}
+--- !u!1 &876156224 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4076425115015159178, guid: c22b1c936c517424994b0765bc3bed85, type: 3}
+  m_PrefabInstance: {fileID: 1952150449984855230}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &886897391 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7285846218974061463, guid: c22b1c936c517424994b0765bc3bed85, type: 3}
@@ -1006,6 +1016,8 @@ MonoBehaviour:
   panel: {fileID: 1150766823}
   restartButton: {fileID: 15327882}
   nextButton: {fileID: 886897391}
+  timeBar: {fileID: 328831393}
+  timeText: {fileID: 876156224}
 --- !u!4 &1347775141
 Transform:
   m_ObjectHideFlags: 0
@@ -1457,6 +1469,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1582943199942941432, guid: c22b1c936c517424994b0765bc3bed85, type: 3}
+      propertyPath: gameTime
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 1582943199942941432, guid: c22b1c936c517424994b0765bc3bed85, type: 3}
+      propertyPath: isCountDown
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4768182706935534447, guid: c22b1c936c517424994b0765bc3bed85, type: 3}
       propertyPath: m_Camera
       value: 
