@@ -75,15 +75,13 @@ public class CameraManager : MonoBehaviour
             //カメラのポジションを変数v3と同じにする
             transform.position = v3;
 
-            if(subScreen != null)
+            if (subScreen != null)
             {
                 y = subScreen.transform.position.y;
                 z = subScreen.transform.position.z;
                 Vector3 v = new Vector3(x / 2.0f, y, z);
                 subScreen.transform.position = v;
             }
-
         }
-
     }
 }
