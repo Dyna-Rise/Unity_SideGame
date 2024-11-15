@@ -11,6 +11,12 @@ public class CameraManager : MonoBehaviour
 
     public GameObject subScreen; //サブスクリーン
 
+    public bool isForceScrollX = false; //Xの強制すrクロールフラグ
+    public float forceScrollSpeedX = 0.5f; //Xのスクロールスピード
+    public bool isForceScrollY = false; //Yの強制すrクロールフラグ
+    public float forceScrollSpeedY = 0.5f; //Yのスクロールスピード
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +36,12 @@ public class CameraManager : MonoBehaviour
             float y = player.transform.position.y;
             float z = transform.position.z;
 
+            if (isForceScrollX)
+            {
+                //強制スクロールのＸ座標に書き換え
+                x = transform.position.x + (forceScrollSpeedX * Time.deltaTime);
+            }
+
             //横の同期
             //両端に制限をかける（カメラがどこまで移動できるかの話)
             if (x < leftLimit)
@@ -41,9 +53,15 @@ public class CameraManager : MonoBehaviour
                 x = rightLimit;
             }
 
+            if (isForceScrollY)
+            {
+                //強制スクロールのＸ座標に書き換え
+               y  = transform.position.y + (forceScrollSpeedY * Time.deltaTime);
+            }
+
             //縦の同期
             //上下に移動制限をつける
-            if(y < bottomLimit)
+            if (y < bottomLimit)
             {
                 y = bottomLimit;
             }
