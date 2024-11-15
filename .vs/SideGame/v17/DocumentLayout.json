@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\03.Unity\\SideGame\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{26FDE748-BAB9-2A92-D8F6-AB02113E178A}|Assembly-CSharp.csproj|D:\\03.Unity\\SideGame\\assets\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{26FDE748-BAB9-2A92-D8F6-AB02113E178A}|Assembly-CSharp.csproj|solutionrelative:assets\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{26FDE748-BAB9-2A92-D8F6-AB02113E178A}|Assembly-CSharp.csproj|D:\\03.Unity\\SideGame\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26FDE748-BAB9-2A92-D8F6-AB02113E178A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{26FDE748-BAB9-2A92-D8F6-AB02113E178A}|Assembly-CSharp.csproj|d:\\03.unity\\sidegame\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{26FDE748-BAB9-2A92-D8F6-AB02113E178A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{26FDE748-BAB9-2A92-D8F6-AB02113E178A}|Assembly-CSharp.csproj|D:\\03.Unity\\SideGame\\assets\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26FDE748-BAB9-2A92-D8F6-AB02113E178A}|Assembly-CSharp.csproj|solutionrelative:assets\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,7 +38,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "GameManager.cs",
               "DocumentMoniker": "D:\\03.Unity\\SideGame\\Assets\\Scripts\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
@@ -51,7 +51,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "PlayerController.cs",
               "DocumentMoniker": "D:\\03.Unity\\SideGame\\Assets\\Player\\PlayerController.cs",
               "RelativeDocumentMoniker": "Assets\\Player\\PlayerController.cs",
@@ -59,8 +59,7 @@
               "RelativeToolTip": "Assets\\Player\\PlayerController.cs",
               "ViewState": "AgIAAB4AAAAAAAAAAAAAAC0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T04:40:16.402Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-05T04:40:16.402Z"
             }
           ]
         }

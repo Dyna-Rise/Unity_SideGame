@@ -3,15 +3,15 @@
   "WorkspaceRootPath": "D:\\03.Unity\\SideGame\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{26FDE748-BAB9-2A92-D8F6-AB02113E178A}|Assembly-CSharp.csproj|d:\\03.unity\\sidegame\\assets\\scripts\\changescene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{26FDE748-BAB9-2A92-D8F6-AB02113E178A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\changescene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{26FDE748-BAB9-2A92-D8F6-AB02113E178A}|Assembly-CSharp.csproj|d:\\03.unity\\sidegame\\assets\\scripts\\newbehaviourscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26FDE748-BAB9-2A92-D8F6-AB02113E178A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\newbehaviourscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{26FDE748-BAB9-2A92-D8F6-AB02113E178A}|Assembly-CSharp.csproj|D:\\03.Unity\\SideGame\\assets\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{26FDE748-BAB9-2A92-D8F6-AB02113E178A}|Assembly-CSharp.csproj|solutionrelative:assets\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{26FDE748-BAB9-2A92-D8F6-AB02113E178A}|Assembly-CSharp.csproj|d:\\03.unity\\sidegame\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{26FDE748-BAB9-2A92-D8F6-AB02113E178A}|Assembly-CSharp.csproj|D:\\03.Unity\\SideGame\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{26FDE748-BAB9-2A92-D8F6-AB02113E178A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -22,35 +22,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GameManager.cs",
-              "DocumentMoniker": "D:\\03.Unity\\SideGame\\Assets\\Scripts\\GameManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
-              "ToolTip": "D:\\03.Unity\\SideGame\\Assets\\Scripts\\GameManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\GameManager.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAAwEAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T04:40:59.343Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ChangeScene.cs",
-              "DocumentMoniker": "D:\\03.Unity\\SideGame\\Assets\\Scripts\\ChangeScene.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\ChangeScene.cs",
-              "ToolTip": "D:\\03.Unity\\SideGame\\Assets\\Scripts\\ChangeScene.cs",
-              "RelativeToolTip": "Assets\\Scripts\\ChangeScene.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABUAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T05:12:39.295Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
@@ -69,16 +42,40 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "NewBehaviourScript.cs",
+              "DocumentMoniker": "D:\\03.Unity\\SideGame\\Assets\\Scripts\\NewBehaviourScript.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\NewBehaviourScript.cs",
+              "ToolTip": "D:\\03.Unity\\SideGame\\Assets\\Scripts\\NewBehaviourScript.cs",
+              "RelativeToolTip": "Assets\\Scripts\\NewBehaviourScript.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T23:25:11.261Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "D:\\03.Unity\\SideGame\\Assets\\Scripts\\GameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
+              "ToolTip": "D:\\03.Unity\\SideGame\\Assets\\Scripts\\GameManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GameManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T04:40:59.343Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "PlayerController.cs",
               "DocumentMoniker": "D:\\03.Unity\\SideGame\\Assets\\Player\\PlayerController.cs",
               "RelativeDocumentMoniker": "Assets\\Player\\PlayerController.cs",
               "ToolTip": "D:\\03.Unity\\SideGame\\Assets\\Player\\PlayerController.cs",
               "RelativeToolTip": "Assets\\Player\\PlayerController.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAAwDIAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAC0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T04:40:16.402Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-05T04:40:16.402Z"
             }
           ]
         }
