@@ -96,6 +96,7 @@ public class PlayerController : MonoBehaviour
             groundLayer //対象レイヤー
             );
 
+        Debug.Log(onGround);
 
         //地面にいる時はvelocityがすべてに反応
         //空中にいる時はvelocityは左右だけに反応
