@@ -7,16 +7,20 @@
       "RelativeMoniker": "D:0:0:{26FDE748-BAB9-2A92-D8F6-AB02113E178A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{26FDE748-BAB9-2A92-D8F6-AB02113E178A}|Assembly-CSharp.csproj|D:\\03.Unity\\SideGame\\assets\\scripts\\timecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26FDE748-BAB9-2A92-D8F6-AB02113E178A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\timecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{26FDE748-BAB9-2A92-D8F6-AB02113E178A}|Assembly-CSharp.csproj|D:\\03.Unity\\SideGame\\assets\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{26FDE748-BAB9-2A92-D8F6-AB02113E178A}|Assembly-CSharp.csproj|solutionrelative:assets\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{26FDE748-BAB9-2A92-D8F6-AB02113E178A}|Assembly-CSharp.csproj|d:\\03.unity\\sidegame\\assets\\scripts\\itemdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{26FDE748-BAB9-2A92-D8F6-AB02113E178A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\itemdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{26FDE748-BAB9-2A92-D8F6-AB02113E178A}|Assembly-CSharp.csproj|D:\\03.Unity\\SideGame\\assets\\scripts\\resultmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26FDE748-BAB9-2A92-D8F6-AB02113E178A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\resultmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{26FDE748-BAB9-2A92-D8F6-AB02113E178A}|Assembly-CSharp.csproj|D:\\03.Unity\\SideGame\\assets\\scripts\\timecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{26FDE748-BAB9-2A92-D8F6-AB02113E178A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\timecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{26FDE748-BAB9-2A92-D8F6-AB02113E178A}|Assembly-CSharp.csproj|D:\\03.Unity\\SideGame\\assets\\scripts\\itemdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26FDE748-BAB9-2A92-D8F6-AB02113E178A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\itemdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{26FDE748-BAB9-2A92-D8F6-AB02113E178A}|Assembly-CSharp.csproj|D:\\03.Unity\\SideGame\\assets\\scripts\\cameramanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,7 +54,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
+              "Title": "ResultManager.cs",
+              "DocumentMoniker": "D:\\03.Unity\\SideGame\\Assets\\Scripts\\ResultManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ResultManager.cs",
+              "ToolTip": "D:\\03.Unity\\SideGame\\Assets\\Scripts\\ResultManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ResultManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T06:20:24.349Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "ItemData.cs",
               "DocumentMoniker": "D:\\03.Unity\\SideGame\\Assets\\Scripts\\ItemData.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ItemData.cs",
@@ -58,24 +74,23 @@
               "RelativeToolTip": "Assets\\Scripts\\ItemData.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwYAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T02:34:23.655Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-18T02:34:23.655Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "TimeController.cs",
               "DocumentMoniker": "D:\\03.Unity\\SideGame\\Assets\\Scripts\\TimeController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\TimeController.cs",
               "ToolTip": "D:\\03.Unity\\SideGame\\Assets\\Scripts\\TimeController.cs",
               "RelativeToolTip": "Assets\\Scripts\\TimeController.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAAAD4AAAARAAAAAAAAAA==",
+              "ViewState": "AgIAADgAAAAAAAAAAAAkwEAAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-15T04:39:55.59Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "CameraManager.cs",
               "DocumentMoniker": "D:\\03.Unity\\SideGame\\Assets\\Scripts\\CameraManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CameraManager.cs",
@@ -93,23 +108,22 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
               "ToolTip": "D:\\03.Unity\\SideGame\\Assets\\Scripts\\GameManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameManager.cs",
-              "ViewState": "AgIAAH8AAAAAAAAAAAAAAI4AAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-14T04:40:59.343Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "PlayerController.cs",
               "DocumentMoniker": "D:\\03.Unity\\SideGame\\Assets\\Player\\PlayerController.cs",
               "RelativeDocumentMoniker": "Assets\\Player\\PlayerController.cs",
               "ToolTip": "D:\\03.Unity\\SideGame\\Assets\\Player\\PlayerController.cs",
               "RelativeToolTip": "Assets\\Player\\PlayerController.cs",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAAAFoAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAYwGMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T04:40:16.402Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-05T04:40:16.402Z"
             }
           ]
         }
