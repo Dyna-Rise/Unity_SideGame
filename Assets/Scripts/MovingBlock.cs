@@ -106,7 +106,7 @@ public class MovingBlock : MonoBehaviour
     }
 
     //何かがブロックから離れた時
-    void OnCollisionEnter(Collision collision)
+    void OnCollisionExit2D(Collision2D collision)
     {
         //相手がプレイヤーだったら
         if(collision.gameObject.tag == "Player")
