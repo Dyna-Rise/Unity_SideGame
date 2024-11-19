@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 8925343}
   - component: {fileID: 8925342}
   - component: {fileID: 8925341}
+  - component: {fileID: 8925344}
   m_Layer: 6
   m_Name: GimmickBlock
   m_TagString: Untagged
@@ -203,7 +204,7 @@ Transform:
   m_GameObject: {fileID: 8925338}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.41, y: -0.67, z: 0}
+  m_LocalPosition: {x: 15.68, y: 0.31, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -317,6 +318,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.2, y: 1.0113611}
   m_EdgeRadius: 0
+--- !u!114 &8925344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8925338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0fd005568a3aeb42ba53395ce2ba670, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  length: 5
+  isDelete: 0
+  deadObj: {fileID: 1913826533}
 --- !u!1001 &31798765
 PrefabInstance:
   m_ObjectHideFlags: 0
