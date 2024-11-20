@@ -71,7 +71,7 @@ public class EnemyController : MonoBehaviour
     }
 
     //何かと接触した時は反転
-    private void OnTriggerEnter2D(Collider2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
         isToRight = !isToRight; //向きフラグを反転
         time = 0; //反転までの計測時間もリセット

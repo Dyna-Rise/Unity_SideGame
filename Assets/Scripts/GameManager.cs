@@ -28,9 +28,15 @@ public class GameManager : MonoBehaviour
     public static int totalScore; //合計スコア
     public int stageScore = 0; //そのステージ中に入手したスコア
 
+    //+++サウンド再生追加+++
+    public AudioClip meGameOver; //ゲームオーバーのメロディ
+    public AudioClip meGameClear; //ゲームクリアのメロディ
+
 
     //+++プレイヤー操作+++
     public GameObject inputUI; //タッチ操作のUIパネル
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -91,6 +97,18 @@ public class GameManager : MonoBehaviour
             //UIに数字を反映
             UpdateScore();
 
+            //+++サウンド再生追加
+            //ゲームクリアの曲鳴らす
+            AudioSource soundPlayer = GetComponent<AudioSource>();
+            if(soundPlayer != null)
+            {
+                //BGM停止
+                soundPlayer.Stop();
+                //ゲームクリアの曲を一回だけ鳴らす
+                soundPlayer.PlayOneShot(meGameClear);
+            }
+
+
             //+++プレイヤー操作+++
             inputUI.SetActive(false); //タッチ操作UIを隠す
 
@@ -111,6 +129,17 @@ public class GameManager : MonoBehaviour
             if(timeCnt != null)
             {
                 timeCnt.isTimeOver = true; //時間カウント停止
+            }
+
+            //+++サウンド再生追加
+            //ゲームオーバーの曲鳴らす
+            AudioSource soundPlayer = GetComponent<AudioSource>();
+            if (soundPlayer != null)
+            {
+                //BGM停止
+                soundPlayer.Stop();
+                //ゲームオーバーの曲を一回だけ鳴らす
+                soundPlayer.PlayOneShot(meGameOver);
             }
 
             //+++プレイヤー操作+++
