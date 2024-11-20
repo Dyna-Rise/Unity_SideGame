@@ -11,7 +11,7 @@ public class CannonController : MonoBehaviour
     public float length = 8.0f; //範囲
 
     GameObject player; //プレイヤー
-    Transform gateTransform; //発射校のTransform
+    Transform gateTransform; //発射口のTransform
     float passedTimes = 0; //経過時間
 
     //距離チェック用の自作メソッド

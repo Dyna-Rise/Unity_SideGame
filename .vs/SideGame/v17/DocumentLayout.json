@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "D:\\03.Unity\\SideGame\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{26FDE748-BAB9-2A92-D8F6-AB02113E178A}|Assembly-CSharp.csproj|D:\\03.Unity\\SideGame\\assets\\scripts\\switchaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{26FDE748-BAB9-2A92-D8F6-AB02113E178A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\switchaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{26FDE748-BAB9-2A92-D8F6-AB02113E178A}|Assembly-CSharp.csproj|d:\\03.unity\\sidegame\\assets\\scripts\\enemycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26FDE748-BAB9-2A92-D8F6-AB02113E178A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{26FDE748-BAB9-2A92-D8F6-AB02113E178A}|Assembly-CSharp.csproj|d:\\03.unity\\sidegame\\assets\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{26FDE748-BAB9-2A92-D8F6-AB02113E178A}|Assembly-CSharp.csproj|D:\\03.Unity\\SideGame\\assets\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{26FDE748-BAB9-2A92-D8F6-AB02113E178A}|Assembly-CSharp.csproj|solutionrelative:assets\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26FDE748-BAB9-2A92-D8F6-AB02113E178A}|Assembly-CSharp.csproj|D:\\03.Unity\\SideGame\\assets\\scripts\\cannoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26FDE748-BAB9-2A92-D8F6-AB02113E178A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cannoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26FDE748-BAB9-2A92-D8F6-AB02113E178A}|Assembly-CSharp.csproj|D:\\03.Unity\\SideGame\\assets\\scripts\\switchaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26FDE748-BAB9-2A92-D8F6-AB02113E178A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\switchaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{26FDE748-BAB9-2A92-D8F6-AB02113E178A}|Assembly-CSharp.csproj|D:\\03.Unity\\SideGame\\assets\\scripts\\virtualpad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -50,7 +58,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -70,7 +78,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "EnemyController.cs",
+              "DocumentMoniker": "D:\\03.Unity\\SideGame\\Assets\\Scripts\\EnemyController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\EnemyController.cs",
+              "ToolTip": "D:\\03.Unity\\SideGame\\Assets\\Scripts\\EnemyController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\EnemyController.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAAAGQAAAB3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T03:24:30.301Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CannonController.cs",
+              "DocumentMoniker": "D:\\03.Unity\\SideGame\\Assets\\Scripts\\CannonController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CannonController.cs",
+              "ToolTip": "D:\\03.Unity\\SideGame\\Assets\\Scripts\\CannonController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CannonController.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAAAFQAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T01:42:54.801Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "GameManager.cs",
               "DocumentMoniker": "D:\\03.Unity\\SideGame\\Assets\\Scripts\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
@@ -82,7 +115,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "VirtualPad.cs",
               "DocumentMoniker": "D:\\03.Unity\\SideGame\\Assets\\Scripts\\VirtualPad.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\VirtualPad.cs",
@@ -94,7 +127,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "SwitchAction.cs",
               "DocumentMoniker": "D:\\03.Unity\\SideGame\\Assets\\Scripts\\SwitchAction.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\SwitchAction.cs",
@@ -102,12 +135,11 @@
               "RelativeToolTip": "Assets\\Scripts\\SwitchAction.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T06:37:22.259Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-19T06:37:22.259Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "MovingBlock.cs",
               "DocumentMoniker": "D:\\03.Unity\\SideGame\\Assets\\Scripts\\MovingBlock.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MovingBlock.cs",
@@ -119,7 +151,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "GimmickBlock.cs",
               "DocumentMoniker": "D:\\03.Unity\\SideGame\\Assets\\Scripts\\GimmickBlock.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GimmickBlock.cs",
@@ -131,7 +163,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "ResultManager.cs",
               "DocumentMoniker": "D:\\03.Unity\\SideGame\\Assets\\Scripts\\ResultManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ResultManager.cs",
@@ -143,7 +175,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "ItemData.cs",
               "DocumentMoniker": "D:\\03.Unity\\SideGame\\Assets\\Scripts\\ItemData.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ItemData.cs",
@@ -155,7 +187,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "TimeController.cs",
               "DocumentMoniker": "D:\\03.Unity\\SideGame\\Assets\\Scripts\\TimeController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\TimeController.cs",
@@ -167,7 +199,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "CameraManager.cs",
               "DocumentMoniker": "D:\\03.Unity\\SideGame\\Assets\\Scripts\\CameraManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CameraManager.cs",
@@ -185,10 +217,9 @@
               "RelativeDocumentMoniker": "Assets\\Player\\PlayerController.cs",
               "ToolTip": "D:\\03.Unity\\SideGame\\Assets\\Player\\PlayerController.cs",
               "RelativeToolTip": "Assets\\Player\\PlayerController.cs",
-              "ViewState": "AgIAAL0AAAAAAAAAAAAUwOkAAAA5AAAAAAAAAA==",
+              "ViewState": "AgIAAJMAAAAAAAAAAAAAAJwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T04:40:16.402Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-05T04:40:16.402Z"
             }
           ]
         }
