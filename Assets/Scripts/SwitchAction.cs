@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class SwitchAction : MonoBehaviour
 {
     //連動するMovingBlockを決める変数

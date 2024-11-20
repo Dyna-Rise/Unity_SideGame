@@ -29,6 +29,9 @@ public class GameManager : MonoBehaviour
     public int stageScore = 0; //そのステージ中に入手したスコア
 
 
+    //+++プレイヤー操作+++
+    public GameObject inputUI; //タッチ操作のUIパネル
+
     // Start is called before the first frame update
     void Start()
     {
@@ -50,6 +53,7 @@ public class GameManager : MonoBehaviour
 
         //+++スコア追加+++//
         UpdateScore();
+
     }
 
     // Update is called once per frame
@@ -87,6 +91,9 @@ public class GameManager : MonoBehaviour
             //UIに数字を反映
             UpdateScore();
 
+            //+++プレイヤー操作+++
+            inputUI.SetActive(false); //タッチ操作UIを隠す
+
         }
         else if(PlayerController.gameState == "gameover")
         {
@@ -106,6 +113,8 @@ public class GameManager : MonoBehaviour
                 timeCnt.isTimeOver = true; //時間カウント停止
             }
 
+            //+++プレイヤー操作+++
+            inputUI.SetActive(false); //タッチ操作UIを隠す
 
         }
         else if(PlayerController.gameState == "playing")
@@ -159,5 +168,18 @@ public class GameManager : MonoBehaviour
         //ステージ開始直後は 0点 + トータル点
         int score = stageScore + totalScore;
         scoreText.GetComponent<TextMeshProUGUI>().text = score.ToString();
+    }
+
+    //+++プレイヤー操作+++
+    //GameManager経由のジャンプメソッドの制作
+    public void Jump()
+    {
+        //プレイヤーオブジェクトを変数playerに取得
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        //プレイヤーについているPlayerController.csを変数playerCntに取得
+        PlayerController playerCnt = player.GetComponent<PlayerController>();
+
+        //PlayerControllerのJumpメソッドを発動
+        playerCnt.Jump();
     }
 }

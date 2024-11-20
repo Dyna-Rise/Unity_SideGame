@@ -32,6 +32,9 @@ public class PlayerController : MonoBehaviour
 
     public int score = 0; //スコア
 
+    //タッチ操作対応追加
+    bool isMoving = false; //タッチ操作中かどうかのフラグ
+
     // Start is called before the first frame update
     void Start()
     {
@@ -55,8 +58,12 @@ public class PlayerController : MonoBehaviour
             return;
         }
 
-        //水平方向の入力をチェックする
-        axisH = Input.GetAxisRaw("Horizontal");
+        //移動の改造
+        if(isMoving == false)
+        {
+            //水平方向の入力をチェック
+            axisH = Input.GetAxisRaw("Horizontal");
+        }
 
         if (axisH > 0.0f)
         {
@@ -207,6 +214,26 @@ public class PlayerController : MonoBehaviour
     {
         //速度を0にする
         rbody.velocity = new Vector2(0, 0);
+    }
+
+    //タッチスクリーン対応追加
+    //第一引数のhは水平（横）、第二引数のvは垂直（縦）を担当
+    public void SetAxis(float h,float v)
+    {
+        //パッドの水平(横)方向の値を引数から拾う
+        axisH = h;
+
+        //もしパッドの水平(横)方向の値が0なら
+        if(axisH == 0)
+        {
+            //パッドの水平の力が0だと、Updateメソッドにおいてキーボード操作が反応可
+            isMoving = false;
+        }
+        else
+        {
+            //パッドの水平の力が入っていると、Updateメソッドにおいてキーボード操作が反応しない
+            isMoving = true;
+        }
     }
 }
 
