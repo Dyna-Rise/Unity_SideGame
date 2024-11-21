@@ -59,7 +59,7 @@ public class PlayerController : MonoBehaviour
         }
 
         //移動の改造
-        if(isMoving == false)
+        if (isMoving == false)
         {
             //水平方向の入力をチェック
             axisH = Input.GetAxisRaw("Horizontal");

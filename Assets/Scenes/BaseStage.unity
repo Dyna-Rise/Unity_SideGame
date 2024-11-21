@@ -1838,6 +1838,10 @@ PrefabInstance:
       propertyPath: isCountDown
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3857223240214886119, guid: c22b1c936c517424994b0765bc3bed85, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4768182706935534447, guid: c22b1c936c517424994b0765bc3bed85, type: 3}
       propertyPath: m_Camera
       value: 
@@ -1942,6 +1946,10 @@ PrefabInstance:
     - target: {fileID: 3758041571571727774, guid: 2de5bb46dcfece24c8082f0cc15d623a, type: 3}
       propertyPath: m_Name
       value: goal
+      objectReference: {fileID: 0}
+    - target: {fileID: 3758041571571727774, guid: 2de5bb46dcfece24c8082f0cc15d623a, type: 3}
+      propertyPath: m_TagString
+      value: Goal
       objectReference: {fileID: 0}
     - target: {fileID: 8167800844059134201, guid: 2de5bb46dcfece24c8082f0cc15d623a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2169,11 +2177,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6565414594109261480, guid: 8d9b8fb4061efd7438e51e3d5af4f19a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.94
+      value: -8.39
       objectReference: {fileID: 0}
     - target: {fileID: 6565414594109261480, guid: 8d9b8fb4061efd7438e51e3d5af4f19a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.79
+      value: -1.48
       objectReference: {fileID: 0}
     - target: {fileID: 6565414594109261480, guid: 8d9b8fb4061efd7438e51e3d5af4f19a, type: 3}
       propertyPath: m_LocalPosition.z

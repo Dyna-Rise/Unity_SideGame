@@ -22,6 +22,6 @@ public class ShellController : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collision)
     {
         //何かとぶつかったら即消滅
-        Destroy(gameObject);    
+        Destroy(gameObject);
     }
 }
